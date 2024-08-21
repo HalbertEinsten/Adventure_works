@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: dim_Local
+    description: Dimensão Endereço Adventure Works
+    columns:
+      - name: pk_CITY
+        description: Chave primaria Cidade
+        tests:
+          - unique
+          - not_null
+      - name: City.CIDADE
+      - name: PK_STATE
+      - name: NOME_ESTADO
+      - name: PK_COUNTRY
+      - name: NOME_PAIS
+              
+  
