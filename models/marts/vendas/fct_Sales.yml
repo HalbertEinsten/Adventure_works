@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: fct_Sales
+    description: Fact Salves Adventure Works
+    columns:
+      - name: SK_SALES
+      - name: FK_SALESID
+      - name: QNT_PEDIDO
+      - name: PRECO_DA_UNIDADE     
+      - name: DESCONTO_PRODUTO
+      - name: PK_SALESID
+      - name: DT_ORDER
+      - name: STATUS_COMPRA
+      - name: CARTAO
+      - name: TOTAL_NEGOCIADO
+      - name: RECEITA_COM_DESCONTO
+      - name: TAXA_LOCALIDADE
+      - name: TAXA_FRETE
+      - name: TOTAL_BRUTO
+      - name: TOTAL_LIQUIDO
+      - name: FRETE_RATEADO
+      - name: LUCRO
+      - name: CIDADE
+      - name: NOME_ESTADO
+      - name: NOME_PAIS
+      - name: CustomerID
+      - name: NOME_PRODUTO
+      - name: MOTIVO
+      - name: CATEGORIA_MOTIVO

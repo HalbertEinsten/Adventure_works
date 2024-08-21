@@ -3,6 +3,7 @@ with
         select 
         PK_CUSTOMER
         ,PERSONID
+        ,fk_TerritoryID
         from {{ ref('stg_erp__Customer') }}
     )
 

@@ -9,12 +9,12 @@ with
             ,cast(SUBTOTAL  as varchar) as Receita_com_desconto
             ,cast(TAXAMT  as varchar) as taxa_localidade
             ,cast(FREIGHT as varchar) as taxa_frete 
+            ,cast(TERRITORYID as int) as fk_Territory
             --CURRENCYRATEID
             --CREDITCARDAPPROVALCODE
             --BILLTOADDRESSID
             --SHIPTOADDRESSID
             --SHIPMETHODID
-            --TERRITORYID
             --ONLINEORDERFLAG
             --PURCHASEORDERNUMBER
             --ACCOUNTNUMBER
