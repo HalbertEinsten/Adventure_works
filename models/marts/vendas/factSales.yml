@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: fct_Sales
+  - name: fact_Sales
     description: Fact Salves Adventure Works
     columns:
       - name: SK_SALES

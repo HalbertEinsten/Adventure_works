@@ -41,11 +41,8 @@ models:
       materialized: table
       intermediate: 
         materialized: view
-        +schema: int
       vendas:
-        +schema: marts
     staging:
-      +schema: stg
       materialized: view
       erp:   
    
