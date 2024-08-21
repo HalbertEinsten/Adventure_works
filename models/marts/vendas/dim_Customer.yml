@@ -10,5 +10,6 @@ models:
           - unique
           - not_null
       - name: PersonID
+      - name: fk_TerritoryID
               
   

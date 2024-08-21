@@ -16,6 +16,7 @@ with
             stg_City.PK_CITY
             , stg_City.CIDADE
             , stg_State.PK_STATE
+            , stg_State.fk_SalesID_Territory 
             , stg_State.NOME_ESTADO
             , stg_Country.PK_COUNTRY
             , stg_Country.NOME_PAIS
