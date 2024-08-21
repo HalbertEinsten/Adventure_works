@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: dim_Product
+  - name: dim_product
     description: Dimensão Produtos Adventure Works
     columns:
       - name: pk_produto
