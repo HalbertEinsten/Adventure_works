@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: dim_Customer
+    description: Dimensão Clientes Adventure Works
+    columns:
+      - name: pk_Customer
+        description: Chave primaria Cliente
+        tests:
+          - unique
+          - not_null
+              
+  
