@@ -1,0 +1,115 @@
+version: 2
+sources:
+  - name: erp
+    description: 'Essa é a fonte do sistema ERP da Adventure_Works com dados de vendas, clientes, produtos e valores.'
+    database: fea24_6
+    schema: raw_Adventure_works
+    tables:
+      - name: SalesOrderHeader
+        description: 'Tabela com dados de Vendas.'
+        columns:
+          - name: SalesOrderID
+            description: 'Chave primária da tabela Vendas.'
+            tests:
+              - unique
+              - not_null
+          - name: OrderDate
+          - name: Status
+            description: 'Status da venda.'
+          - name: TaxAmt
+            description: 'Taxa de localidade'
+          - name: Freight
+            description: 'Frete'
+          - name: TotalDue
+            description: 'Total Negociado'
+          - name: SubTotal
+            description: 'Receita do produto'
+      - name: SalesOrderDetail
+        description: 'Tabela com detalhes de Vendas.'
+        columns:
+          - name: UnitPrice
+            description: 'Preço do produto por unidade' 
+          - name: UnitPriceDiscount
+            description: 'Desconto do produto'
+          - name: OrderQty
+            description: 'Quantidade por pedido/cliente'
+      - name: Product
+        description: 'Tabela de produtos'
+        columns:
+          - name: ProductID
+            tests:
+              - unique
+              - not_null                  
+          - name: Name
+            tests:
+              - unique
+              - not_null
+      - name: CreditCard
+        description: 'Tabela de dados do Cartão'
+        columns:
+          - name : CreditCardID
+            description: 'Chave primaria da tabela Cartão'
+            tests:
+              - unique
+              - not_null
+          - name: CardType
+      - name: Customer
+        description: 'Tabela do cliente'
+        columns: 
+            - name: CustomerID
+              description: 'Chave primaria do cliente'
+              tests:
+                - unique
+                - not_null
+            - name: PersonID    
+      - name: SalesReason
+        description: 'Tabela de motivo de venda'
+        columns: 
+            - name: SalesReasonID
+              description: 'Chave primaria da tabela'
+              tests:
+                - unique
+                - not_null
+            - name: Name
+              tests:
+                - unique
+                - not_null
+      - name: Address
+        description: 'Tabela de cidade'
+        columns: 
+          - name: AddressID
+            description: 'Chave primaria da tabela Address'
+            tests:
+              - unique
+              - not_null 
+          - name: City
+      - name: StateProvince
+        description: 'Tabela dos Estados do Cliente'
+        columns:
+          - name: StateProvinceID
+            description: 'Chave primaria da tabela da cidade'
+            tests:
+              - unique
+              - not_null
+          - name: Name
+            description: 'Nome do estado'
+            tests:
+              - unique
+              - not_null
+            
+      - name: CountryRegion
+        description: 'Tabela de Países'
+        columns:
+          - name: CountryRegionCode
+            description: 'Chave primaria da Tabela País'
+            tests:
+              - unique
+              - not_null
+          - name: Name
+            description: 'Nome do País'
+            tests:
+              - unique
+              - not_null
+                  
+              
+              
